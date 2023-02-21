@@ -1,0 +1,79 @@
+﻿<Page x:Class="RuminiaRespect.View.Pages.CNPPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RuminiaRespect.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CNPPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label>Фамилия</Label>
+            <TextBox Name="LastNameTBox"></TextBox>
+            <GroupBox Header="Ваш пол">
+                <StackPanel>
+                    <RadioButton Name="MaleRadioBtn" Checked="MaleRadioBtn_Checked">Мужчина</RadioButton>
+                    <RadioButton Name="FemaleRadioBtn" Checked="FemaleRadioBtn_Checked">Женщина</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <Label>День рождения</Label>
+            <DatePicker Name="BDayDatePicker"></DatePicker>
+            <GroupBox Header="Вы резидент Румынии?">
+                <StackPanel>
+                    <RadioButton Name="YesRadioBtn" Checked="YesRadioBtn_Checked">ДА</RadioButton>
+                    <RadioButton Name="NoRadioBtn" Checked="NoRadioBtn_Checked">нет</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <Label>Ваш город:</Label>
+            <ComboBox>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Арджеш (Питешти)</ComboBoxItem>
+                <ComboBoxItem>Арад (Арад)</ComboBoxItem>
+                <ComboBoxItem>Бухарест</ComboBoxItem>
+                <ComboBoxItem>Бакэу (Бакэу)</ComboBoxItem>
+                <ComboBoxItem>Бихор (Орадя)</ComboBoxItem>
+                <ComboBoxItem>Бистрица-Нэсэуд (Бистрица)</ComboBoxItem>
+                <ComboBoxItem>Брэила (Брэила)</ComboBoxItem>
+                <ComboBoxItem>Ботошани (Ботошани)</ComboBoxItem>
+                <ComboBoxItem>Брашов (Брашов)</ComboBoxItem>
+                <ComboBoxItem>Бузэу (Бузэу)</ComboBoxItem>
+                <ComboBoxItem>Клуж (Клуж-Напока)</ComboBoxItem>
+                <ComboBoxItem>Кэлэраши (Кэлэраши)</ComboBoxItem>
+                <ComboBoxItem>Караш-Северин (Решица)</ComboBoxItem>
+                <ComboBoxItem>Констанца (Констанца)</ComboBoxItem>
+                <ComboBoxItem>Ковасна (Сфынту-Георге)</ComboBoxItem>
+                <ComboBoxItem>Дымбовица (Тырговиште)</ComboBoxItem>
+                <ComboBoxItem>Долж (Крайова)</ComboBoxItem>
+                <ComboBoxItem>Горж (Тыргу-Жиу)</ComboBoxItem>
+                <ComboBoxItem>Галац (Галац)</ComboBoxItem>
+                <ComboBoxItem>Джурджу (Джурджу)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+                <ComboBoxItem>Алба (Алба-Юлия)</ComboBoxItem>
+            </ComboBox>
+            <Button Name="GenerateCNPBtn" Click="GenerateCNPBtn_Click">Сгенерировать CNP</Button>
+            <Label Name="CNPLabel"></Label>
+        </StackPanel>
+        
+    </Grid>
+</Page>
