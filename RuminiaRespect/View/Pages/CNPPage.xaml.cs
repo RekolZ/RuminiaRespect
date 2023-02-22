@@ -27,8 +27,10 @@ namespace RuminiaRespect.View.Pages
         }
         string gender;
         string resident;
-        string birthday;
         
+
+
+
 
         private void MaleRadioBtn_Checked(object sender, RoutedEventArgs e)
         {
@@ -72,7 +74,36 @@ namespace RuminiaRespect.View.Pages
             string a = LastNameTBox.Text;
             byte[] ascii = Encoding.ASCII.GetBytes(a);
 
-            CNPLabel.Content = birthday+Convert.ToString(resident)+gender+Convert.ToString(ascii);
+            CNPLabel.Content = resident+gender+year+month+day;
+        }
+
+        DateTime Dicker;
+        string month;
+        string day;
+        string year;
+
+        private void BDayDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Dicker = (DateTime)(((DatePicker)sender).SelectedDate);
+            if (Dicker.Month<10)
+            {
+                month = Convert.ToString("0"+Dicker.Month);
+            }
+            else
+            {
+                month = Convert.ToString(Dicker.Month);
+            }
+
+            if (Dicker.Day < 10)
+            {
+                day = Convert.ToString("0" + Dicker.Day);
+            }
+            else
+            {
+                day = Convert.ToString(Dicker.Day);
+            }
+
+            year = Convert.ToString((Dicker.Year)).Remove(0, 2);
         }
     }
 }

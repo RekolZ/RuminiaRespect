@@ -19,7 +19,7 @@
                 </StackPanel>
             </GroupBox>
             <Label>День рождения</Label>
-            <DatePicker Name="BDayDatePicker"></DatePicker>
+            <DatePicker Name="BDayDatePicker" SelectedDateChanged="BDayDatePicker_SelectedDateChanged" SelectedDate="{Binding PropertyName, StringFormat=dd/MM/yyyy}"></DatePicker>
             <GroupBox Header="Вы резидент Румынии?">
                 <StackPanel>
                     <RadioButton Name="YesRadioBtn" Checked="YesRadioBtn_Checked">ДА</RadioButton>
